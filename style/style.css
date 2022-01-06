@@ -1,3 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.app__title {
+  font-size: 38px;
+  line-height: 52px;
+  letter-spacing: -0.02em;
+  color: #171717;
+}
+
 body {
-    background-color: aquamarine;
+  background: url(../img/background.png) no-repeat;
+  background-position: center;
+  background-size: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0 16px;
+}
+
+.column {
+  padding: 5px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.column_todo {
+  background: #59B4D1;
+}
+
+.column_in-progress {
+  background: #d0935a;
+}
+
+.column_review {
+ background: #945ad1;
+}
+
+.column_done {
+ background: #59d090;
+}
+
+
+
+.column__title {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+
+}
+
+.card:last-child {
+  margin-bottom: 0px;
+}
+
+.card__title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.card__author {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  margin: auto;
+  overflow: hidden;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.card__author-img {
+  width: 100%;
 }
